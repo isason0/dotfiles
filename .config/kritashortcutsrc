@@ -1,0 +1,23 @@
+[Shortcuts]
+KisToolSelectElliptical=none
+KisToolSelectOutline=S
+KisToolSelectRectangular=R, S
+KisToolTransform=T
+KritaTransform/KisToolMove=M
+decrease_brush_size=J
+edit_redo=Shift+Z
+edit_undo=Z
+increase_brush_size=K
+krita_filter_perchannel=none
+make_brush_color_darker=none
+mirrorImageHorizontal=Ctrl+M
+mirror_canvas=none
+next_favorite_preset=none
+pathpoint-join=none
+previous_favorite_preset=none
+rotate_canvas_left=,
+rotate_canvas_right=.
+toggle_fg_bg=Ctrl+Shift+X
+undo_polygon_selection=Ctrl+Shift+Z
+view_zoom_in=+
+view_zoom_out=-
