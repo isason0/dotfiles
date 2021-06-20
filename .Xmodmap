@@ -1,0 +1,4 @@
+clear Lock
+remove Lock = Caps_Lock
+keycode 135 = Super_R
+keycode 66 = BackSpace
