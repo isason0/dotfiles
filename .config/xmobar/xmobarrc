@@ -1,0 +1,47 @@
+Config { font = "xft:Noto Sans Mono:pixelsize=12:antialias=true:hinting=true"
+       , additionalFonts = []
+       , borderColor = "black"
+       , border = TopB
+       , bgColor = "#262833"
+       , fgColor = "#afbecf"
+       , alpha = 255
+       , position = Bottom
+       , textOffset = -1
+       , iconOffset = -1
+       , lowerOnStart = True
+       , pickBroadest = False
+       , persistent = True
+       , hideOnStart = False
+       , iconRoot = "."
+       , allDesktops = True
+       , overrideRedirect = True
+       , commands = [
+       --             Display weather NOT IN USE
+                      Run Weather "EGPF" ["-t","<station>: <tempC>C",
+                                          "-L","18","-H","25",
+                                          "--normal","green",
+                                          "--high","red",
+                                          "--low","lightblue"] 36000
+        --            Display networks NOT IN USE
+                    , Run Network "eth0" ["-L","0","-H","32",
+                                          "--normal","#77d488","--high","#d4777a"] 10
+                    , Run Network "eth1" ["-L","0","-H","32",
+                                          "--normal","green","--high","red"] 10
+        --            Display CPU usage
+                    , Run Cpu ["-L","3","-H","50",
+                               "--normal","#afbecf","--high","#d4777a"] 10
+        --            Display memory usage
+                    , Run Memory ["-t","Mem: <usedratio>%"] 10
+        --            Swap usage
+                    , Run Swap [] 10
+        --            Kernel version
+                    , Run Com "uname" ["-s","-r"] "" 36000
+        --            Display time and date
+                    , Run Date "%a %b %_d %Y %H:%M" "date" 100
+                    , Run StdinReader
+                    ]
+       , sepChar = "%"
+       , alignSep = "}{"
+       , template = "  How are you today?  %date% | %StdinReader% }\
+                    \{ %memory% | %cpu%  "
+       }
