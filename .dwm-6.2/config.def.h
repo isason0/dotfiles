@@ -64,7 +64,7 @@ static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() 
 static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", col_gray1, "-nf", col_gray3, "-sb", col_cyan, "-sf", col_gray4, NULL };
 static const char *termcmd[]  = { "alacritty", NULL };
 static const char *browscmd[] = { "firefox", NULL };
-static const char *emacscmd[] = { "emacs", NULL };
+static const char *codecmd[] = { "code", NULL };
 
 static Key keys[] = {
 	/* modifier                     key        function        argument */
@@ -73,7 +73,7 @@ static Key keys[] = {
 	{ MODKEY,                       XK_d,      spawn,          {.v = dmenucmd } },
 	{ MODKEY,                       XK_Return, spawn,          {.v = termcmd } },
 	{ MODKEY|ShiftMask,             XK_f,      spawn,          {.v = browscmd } },
-	{ MODKEY|ShiftMask,             XK_g,      spawn,          {.v = emacscmd } },
+	{ MODKEY|ShiftMask,             XK_g,      spawn,          {.v = codecmd } },
 
 	{ MODKEY,                       XK_b,      togglebar,      {0} },
 
