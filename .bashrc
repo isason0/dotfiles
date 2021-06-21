@@ -28,8 +28,5 @@ PS2="\[\e[35m\] > \[\e[00m\]"
 ## My old prompt
 # PS1=" \[\e[35m\]\W[\e[00m\] ><((*> "
 
-## Doom emacs path
-export PATH="$HOME/.emacs.d/bin:$PATH"
-
 ##Set editors
 export EDITOR="nvim"
