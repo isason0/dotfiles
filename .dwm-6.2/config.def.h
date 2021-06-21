@@ -1,16 +1,13 @@
 /* See LICENSE file for copyright and license details. :: suckless */
 
-/* T o m h 0 -- dwm config : */
-
-
 /* appearance */
 static const unsigned int borderpx  = 2;        /* border pixel of windows */
 static const unsigned int gappx     = 20;        /* gaps between windows */
 static const unsigned int snap      = 10;       /* snap pixel */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 0;        /* 0 means bottom bar */
-static const char *fonts[]          = { "Noto Sans Mono:size=10" };
-static const char dmenufont[]       = "Noto Sans Mono:size=10";
+static const char *fonts[]          = { "Source Code Pro:size=10" };
+static const char dmenufont[]       = "Source Code Pro:size=10";
 /* Dracula background */
 static const char col_gray1[]       = "#282a36";
 
@@ -26,7 +23,8 @@ static const char *colors[][3]      = {
 };
 
 /* tagging */
-static const char *tags[] = { "1", "2", "3", "4", "5", "6", "7", "8", "9" };
+/* 𝓘 𝓗 𝓐 𝓣 𝓔 𝓨 𝓞 𝓤 */
+static const char *tags[] = { "I" , "I", "I", "I", "I", "I", "I" };
 
 static const Rule rules[] = {
 	/* xprop(1):
@@ -45,7 +43,7 @@ static const int resizehints = 1;    /* 1 means respect size hints in tiled resi
 
 static const Layout layouts[] = {
 	/* symbol     arrange function */
-	{ "[=]",      tile },    /* first entry is default */
+	{ "[]=",      tile },    /* first entry is default */
 	{ "><>",      NULL },    /* no layout function means floating behavior */
 	{ "[M]",      monocle },
 };
