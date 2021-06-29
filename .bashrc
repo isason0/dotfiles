@@ -28,6 +28,9 @@ PS2="\[\e[35m\] > \[\e[00m\]"
 ## My old prompt
 # PS1=" \[\e[35m\]\W[\e[00m\] ><((*> "
 
+## Make cursor blink
+PROMPT_COMMAND='echo -en "\x1b[1 q"'
+
 ## Set editors
 export EDITOR="nvim"
 
