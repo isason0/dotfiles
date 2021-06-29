@@ -28,5 +28,8 @@ PS2="\[\e[35m\] > \[\e[00m\]"
 ## My old prompt
 # PS1=" \[\e[35m\]\W[\e[00m\] ><((*> "
 
-##Set editors
+## Set editors
 export EDITOR="nvim"
+
+## Use starship prompt
+eval "$(starship init bash)"
