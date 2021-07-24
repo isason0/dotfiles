@@ -18,7 +18,7 @@ xset -dpms s off &
 nitrogen --restore &
 
 ## Use finnish keymap
-setxkbmap fi &
+setxkbmap fi
 
 ## Change default X cursor
 #xsetroot -cursor_name left_ptr &
